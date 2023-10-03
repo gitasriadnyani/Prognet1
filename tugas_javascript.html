@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Pemrograman Internet</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Beranda</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1>Tugas JavaScript</h1>
+        <form id="biodataForm">
+            <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" class="form-control" id="nama" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat:</label>
+                <textarea class="form-control" id="alamat" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="usia">Usia:</label>
+                <input type="number" class="form-control" id="usia" required>
+            </div>
+            <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="jenisKelamin" id="lakiLaki" value="Laki-laki" required>
+                    <label class="form-check-label" for="lakiLaki">Laki-laki</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="jenisKelamin" id="perempuan" value="Perempuan" required>
+                    <label class="form-check-label" for="perempuan">Perempuan</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="hobi">Hobi:</label>
+                <select class="form-control" id="hobi" required>
+                    <option value="">Pilih Hobi</option>
+                    <option value="Membaca">Membaca</option>
+                    <option value="Olahraga">Olahraga</option>
+                    <option value="Bermain Musik">Bermain Musik</option>
+                    <option value="Makanan">Makanan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Pilih Warna Favorit:</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="warna[]" id="merah" value="Merah">
+                    <label class="form-check-label" for="merah">Merah</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="warna[]" id="biru" value="Biru">
+                    <label class="form-check-label" for="biru">Biru</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="warna[]" id="hijau" value="Hijau">
+                    <label class="form-check-label" for="hijau">Hijau</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
