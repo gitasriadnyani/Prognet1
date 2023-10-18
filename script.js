@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         if (isValid) {
-            alert('Form berhasil dikirim!');
-            biodataForm.reset();
+            // Mengirim formulir secara otomatis jika validasi berhasil
+            biodataForm.submit();
         }
     }
     
@@ -38,3 +38,4 @@ document.addEventListener('DOMContentLoaded', function() {
         errorDiv.style.display = 'none';
     }
 });
+
